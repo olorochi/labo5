@@ -1,4 +1,4 @@
-header, nav, main, footer {
+header, nav, footer {
     padding: 8%;
 }
 
@@ -12,11 +12,12 @@ nav {
 
 aside {
     grid-area: asi;
-    padding: 32%;
+    padding: 32%; /* 8*4 */
 }
 
 main {
     grid-area: mai;
+    padding: 10.6667%; /* 32/3 */
 }
 
 footer {
