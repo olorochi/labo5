@@ -1,0 +1,45 @@
+header, nav, main, footer {
+    padding: 8%;
+}
+
+header {
+    grid-area: hea;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: asi;
+    padding: 32%;
+}
+
+main {
+    grid-area: mai;
+}
+
+footer {
+    grid-area: foo;
+}
+
+#conteneur > * {
+    background-color: aquamarine;
+}
+
+#conteneur {
+    display: grid;
+    margin: auto;
+    width: 480px;
+
+    grid-gap: 2px;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(4, 120px);
+    grid-template-areas:
+        "hea hea hea hea"
+        "nav nav nav nav"
+        "asi mai mai mai"
+        "asi mai mai mai"
+        "asi mai mai mai"
+        "foo foo foo foo";  
+}
